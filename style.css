@@ -1,0 +1,304 @@
+p {
+  margin-bottom: 0px;
+}
+
+.bi::before {
+  color: white;
+}
+
+/********* DRAWER CSS *********/
+.drawer-open {
+  position: fixed;
+  top: 100px;
+  left: -43px;
+  border-radius: 0px;
+  rotate: 90deg;
+  display: none;
+}
+
+.module-drawer {
+  padding-right: 0px;
+}
+
+.module-drawer-wrapper {
+  background-color: #f0f1f3;
+  min-height: 350px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.drawer-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #355263;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.drawer-content {
+  min-height: 232px;
+}
+
+.drawer-content .nav-item {
+  padding: 2px 10px;
+}
+
+.drawer-content .nav-item:first-child {
+  border-right: 1px solid #a2a8ac;
+  padding-left: 0px;
+}
+
+.drawer-content .nav-pills .nav-link {
+  background-color: transparent;
+  color: #a2a8ac;
+  padding: 0px !important;
+}
+
+.drawer-content .nav-pills .nav-link.active {
+  color: #44a3fc;
+}
+
+.drawer-content .accordion-item {
+  background-color: transparent;
+  border: 0px !important;
+}
+
+.drawer-content .accordion-body {
+  padding-left: 0px;
+}
+
+.drawer-content .accordion-header {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.drawer-content .accordion-header .accordion-button {
+  padding-left: 0px;
+}
+
+.drawer-content .accordion-header .accordion-button::after {
+  margin-left: 10px;
+}
+
+.drawer-content .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+
+.drawer-content .accordion-header button {
+  background-color: transparent;
+}
+
+.drawer-content .setting-wrapper {
+  padding: 15px 0px;
+  border-bottom: 1px solid #dbdcdc;
+  font-family: "Lato", sans-serif;
+}
+
+.drawer-content .setting-wrapper .form-check-input {
+  box-shadow: none;
+  height: 1.3em;
+  width: 2.5em;
+}
+
+.drawer-content .setting-wrapper .form-check-input {
+  background-color: #818181;
+  border-color: #818181;
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+}
+
+.drawer-content .setting-wrapper .form-check-input:checked {
+  background-color: #1eb420;
+  border-color: #1eb420;
+}
+
+.drawer-content .setting-wrapper .col .row {
+  width: fit-content;
+}
+
+.module-visibility-wrapper button {
+  padding: 20px;
+  border: 3px solid;
+}
+
+.module-visibility-wrapper .bi::before {
+  font-size: 50px;
+  color: #818181;
+}
+
+.module-visibility-wrapper {
+  color: #818181;
+}
+
+.module-visibility-wrapper .active .bi::before {
+  color: #27a6f9;
+}
+
+.module-visibility-wrapper .active {
+  color: #27a6f9;
+}
+
+.drawer-footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #355263;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.drawer-footer .btn {
+  background-color: #4c6c7f;
+  border-radius: 0px;
+  border: none;
+}
+
+/********* SECTION CSS *********/
+
+.section-container {
+  padding: 0px;
+}
+
+.blade-section {
+  background-image: url(bg.jpg);
+  background-position: center;
+  padding: 40px 95px;
+}
+
+.blade-text-col {
+  padding-right: 30px;
+}
+
+.blade-text-col-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 20px;
+  background: #eeeeeeb2;
+  backdrop-filter: blur(5px);
+  padding: 28px 24px 24px 24px;
+  gap: 24px;
+  width: 100%;
+}
+
+.title {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.subtitle {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.content {
+  height: 72px;
+  overflow: hidden;
+}
+
+.content p {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+#read-more {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  border: none;
+  background: none;
+  max-width: fit-content;
+  padding: 0px;
+}
+
+.cta-wrapper {
+  max-width: 384px;
+  gap: 24px;
+}
+
+.cta {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  border: none;
+  padding: 4px 8px 4px 0px;
+  width: 180px;
+}
+
+.blade-image-col {
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+/********* TABLET CSS *********/
+
+@media only screen and (max-width: 992px) {
+  .blade-wrapper {
+    gap: 30px;
+  }
+
+  .blade-text-col {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blade-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #read-more {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .cta {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+/********* MOBILE CSS *********/
+
+@media only screen and (max-width: 540px) {
+  .blade-section {
+    padding: 40px 15px;
+  }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebMD Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-content">
+        <button class="drawer-open btn btn-primary">Open Drawer</button>
+        <div class="row ">
+            <div class="module-drawer col-md-4 col-sm-12">
+                <div class="module-drawer-wrapper">
+                    <div class="drawer-heading">
+                        <p>BLADE MODULE</p>
+                        <button type="button" class="btn drawer-close d-flex"><i class="bi bi-x-circle"></i></button>
+                    </div>
+                    <div class="drawer-content p-3">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active p-1" id="pills-content-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-content" type="button" role="tab"
+                                    aria-controls="pills-content" aria-selected="true">Content</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-1" id="pills-settings-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-settings" type="button" role="tab"
+                                    aria-controls="pills-settings" aria-selected="false">Settings</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-content" role="tabpanel"
+                                aria-labelledby="pills-content-tab" tabindex="0">
+                                <div class="setting-wrapper d-flex justify-content-between flex-column gap-3">
+                                    <p>Blade Title</p>
+                                    <input type="text" name="blade_edit_title" id="blade_edit_title">
+                                </div>
+                                <div class="setting-wrapper d-flex justify-content-between flex-column gap-3">
+                                    <p>Blade Subtitle</p>
+                                    <input type="text" name="blade_edit_subtitle" id="blade_edit_subtitle">
+                                </div>
+                                <div class="setting-wrapper d-flex justify-content-between flex-column gap-3">
+                                    <p>Blade Content</p>
+                                    <textarea name="blade_edit_content" id="blade_edit_content"></textarea>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-settings" role="tabpanel"
+                                aria-labelledby="pills-settings-tab" tabindex="0">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                ELEMENT VISIBILITY
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="setting-wrapper d-flex justify-content-between">
+                                                    <p>Show Blade Title:</p>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="blade_title">
+                                                    </div>
+                                                </div>
+                                                <div class="setting-wrapper d-flex justify-content-between">
+                                                    <p>Show Blade Caption:</p>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="blade_caption">
+                                                    </div>
+                                                </div>
+                                                <div class="setting-wrapper d-flex justify-content-between">
+                                                    <p>Show "Read More" Button:</p>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="blade_read_more">
+                                                    </div>
+                                                </div>
+                                                <div class="setting-wrapper d-flex justify-content-between">
+                                                    <p>Show CTA 1:</p>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="blade_cta1">
+                                                    </div>
+                                                </div>
+                                                <div class="setting-wrapper d-flex justify-content-between">
+                                                    <p>Show CTA 2:</p>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="blade_cta2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                BLADE SETTINGS
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="setting-wrapper d-flex justify-content-between">
+                                                    <p>Swap Media and Text:</p>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="swap_media_text">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="setting-wrapper d-flex justify-content-start align-items-center">
+                                                    <p>12 Column</p>
+                                                    <div class="row ms-2">
+                                                        <div class="col border border-2 p-2">Text</div>
+                                                        <div class="col border border-2 p-2">Image</div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="setting-wrapper d-flex justify-content-start align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <p>8 Column</p>
+                                                        <p>6 Column</p>
+                                                        <p>4 Column</p>
+                                                    </div>
+                                                    <div class="col ms-4">
+                                                        <div class="row border border-2 p-2">Text</div>
+                                                        <div class="row border border-2 p-2">Image</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                MODULE VISIBILITY
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row module-visibility-wrapper">
+                                                    <p class="d-flex justify-content-between">
+                                                        <button type="button"
+                                                            class="btn active d-flex flex-column align-items-center"
+                                                            data-bs-toggle="button" aria-pressed="true"><i
+                                                                class="bi bi-pc-display"></i>Desktop</button>
+                                                        <button type="button"
+                                                            class="btn active d-flex flex-column align-items-center"
+                                                            data-bs-toggle="button" aria-pressed="true"><i
+                                                                class="bi bi-tablet"></i>Tablet</button>
+                                                        <button type="button"
+                                                            class="btn active d-flex flex-column align-items-center"
+                                                            data-bs-toggle="button" aria-pressed="true"><i
+                                                                class="bi bi-phone"></i>Mobile</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drawer-footer p-3">
+                        <button type="button" class="btn btn-primary"><i class="bi bi-check2"></i> Done</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-container col-md-8 col-sm-12">
+                <section class="blade-section">
+                    <div class="blade-wrapper row">
+                        <div class="blade-text-col col-lg-7 col-md-12 col-sm-12">
+                            <div class="blade-text-col-wrapper">
+                                <h1 class="title" id="blade-title">Blade Title</h1>
+                                <h2 class="subtitle" id="blade-subtitle">Blade Subtitle</h2>
+                                <div class="content" id="blade-content">
+                                    <p>We hold these truths to be self-evident, that all men
+                                        are created equal, that they are endowed by their Creator with certain
+                                        unalienable
+                                        Rights, that among these are Life, Liberty and the pursuit of Happiness. We hold
+                                        these
+                                        truths to be self-evident, that all men are created equal, that they are endowed
+                                        by
+                                        their Creator with certain unalienable Rights, that among these are Life,
+                                        Liberty
+                                        and
+                                        the pursuit of Happiness.</p>
+                                    <p>We hold these truths to be self-evident, that all men are created equal, that
+                                        they
+                                        are
+                                        endowed by their Creator with certain unalienable Rights, that among these are
+                                        Life,
+                                        Liberty and the pursuit of Happiness.</p>
+                                    <p>We hold these truths to be self-evident, that all men are created equal, that
+                                        they
+                                        are
+                                        endowed by their Creator with certain unalienable Rights, that among these are
+                                        Life,
+                                        Liberty and the pursuit of Happiness.We hold these truths to be self-evident,
+                                        that
+                                        all
+                                        men are created equal, that they are endowed by their Creator with certain
+                                        unalienable
+                                        Rights, that among these are Life, Liberty and the pursuit of Happiness.</p>
+                                    <p>We hold these truths to be self-evident, that all men are created equal, that
+                                        they
+                                        are
+                                        endowed by their Creator with certain unalienable Rights, that among these are
+                                        Life,
+                                        Liberty and the pursuit of Happiness.We hold these truths to be self-evident,
+                                        that
+                                        all
+                                        men are created equal, that they are endowed by their Creator with certain
+                                        unalienable
+                                        Rights, that among these are Life, Liberty and the pursuit of Happiness.We hold
+                                        these
+                                        truths to be self-evident, that all men are created equal, that they are endowed
+                                        by
+                                        their Creator with certain unalienable Rights, that among these are Life,
+                                        Liberty
+                                        and
+                                        the pursuit of Happiness.</p>
+                                    We hold these truths to be self-evident, that all men are created equal, that they
+                                    are
+                                    endowed by their Creator with certain unalienable Rights, that among these are Life,
+                                    Liberty and the pursuit of Happiness.</p>
+                                </div>
+                                <button id="read-more">Read More</button>
+                                <div class="cta-wrapper d-flex justify-content-start">
+                                    <button class="cta" id="cta1"> CTA 1</button>
+                                    <button class="cta" id="cta2"> CTA 2</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="blade-image-col col-lg-5 col-md-12 col-sm-12">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
